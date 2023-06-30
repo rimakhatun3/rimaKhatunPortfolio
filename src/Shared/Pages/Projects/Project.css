@@ -1,0 +1,16 @@
+.img-container{
+    height: 300px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+}
+.img-container img{
+    object-fit: cover;
+  overflow: hidden;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+}
+.img-container:hover img{
+    transform: translateY(calc(-100% + 300px));
+  transition: transform 5s ease-in-out;
+}
