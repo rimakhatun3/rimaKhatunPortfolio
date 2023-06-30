@@ -32,8 +32,8 @@ const Projects = () => {
   <h1 className='text-3xl font-extrabold text-center text-orange-500'>--- Projects ---</h1>
 
 
-  <div className='grid lg:grid-cols-3 gap-3  my-14'>
-    {
+  <div className='grid lg:grid-cols-3 gap-5  my-14'>
+    {/* {
       projectData.map(data=> <div key={data.id} className="card w-full bg-base-100 ">
       <figure className="px-10 pt-10">
       <div className='img-container '>
@@ -54,29 +54,112 @@ const Projects = () => {
             <li>Tailwind</li>
             <li>Daisy Ui</li>
         </ul>
-        <div className="card-actions grid grid-cols-3">
-       <div>
-       <a target='_blank' href={data.liveLink}>
+        <div className="card-actions flex gap-5">
+        <a target='_blank' href={data.liveLink}>
             <button className='btn    bg-sky-600 rounded-2xl  '>Live Link</button></a>
-       </div>
-           <div>
-           <a target='_blank' href={data.clientLink}>
-            <button className='btn    bg-green-600 rounded-2xl  '>Client Link</button></a> 
-           </div>
-            <div>
-            <a target='_blank' href={data.serverLink}>
-            <button className='btn    bg-rose-600 rounded-2xl  '>server Link</button></a>
-            </div>
+            <button className='btn bg-orange-600 rounded-2xl text-black' onClick={()=>setIsOpen(true)}>view details</button>
         </div>
-    <div className='w-full  my-3'>
-    {/* <button className='btn w-11/12 bg-orange-600  rounded-2xl text-black' onClick={()=>setIsOpen(true)}>view details</button> */}
-    </div>
+    
         
       </div>
     </div>)
-    }
+    } */}
  
+  <div className="card w-full bg-base-100 ">
+  <figure className="px-10 pt-10">
+  <div className='img-container '>
+    <img  src={toy} alt="" />
 
+  </div>
+    
+  </figure>
+  <div className="card-body text-black items-center text-center">
+  <p className='text-2xl font-bold '>
+        Toy MarketPlace
+    </p>
+    <h2 className='text-2xl font-bold my-3'>Technologies</h2>
+    <ul className='list-disc grid grid-cols-2 justify-between gap-x-16  font-semibold'>
+        <li>Reactjs</li>
+        <li>Firebase</li>
+        <li>Mongodb</li>
+        <li>Tailwind</li>
+        <li>Daisy Ui</li>
+    </ul>
+    <div className="card-actions flex gap-5">
+    <a target='_blank' href="https://toy-marketplace-6e61f.firebaseapp.com/">
+        <button className='btn    bg-sky-600 rounded-2xl  '>Live Link</button></a>
+        <a target='_blank' href="https://github.com/rimakhatun3/toy-market-place">
+        <button className='btn    bg-orange-600 rounded-2xl  '>Client Link</button></a>
+    <a target='_blank' href="https://github.com/rimakhatun3/toy-market-place-server">
+        <button className='btn    bg-rose-500 rounded-2xl  '>Server Link</button></a>
+        {/* <button className='btn bg-orange-600 rounded-2xl text-black' onClick={()=>setShowModal(true)}>view details</button> */}
+    </div>
+  </div>
+</div>
+  <div className="card w-full bg-base-100 ">
+  <figure className="px-10 pt-10">
+  <div className='img-container '>
+    <img  src={samarcamp} alt="" />
+
+  </div>
+    
+  </figure>
+  <div className="card-body items-center text-black text-center">
+  <p className='text-2xl font-bold '>
+       Sport Camp
+    </p>
+    <h2 className='text-2xl font-bold my-3'>Technologies</h2>
+    <ul className='list-disc grid grid-cols-2 gap-x-16 justify-between gap-x-15  font-semibold'>
+        <li>Reactjs</li>
+        <li>Firebase</li>
+        <li>Mongodb</li>
+        <li>Tailwind</li>
+        <li>Daisy Ui</li>
+    </ul>
+    <div className="card-actions grid grid-cols-3 gap-5">
+    <a target='_blank' href="https://b7a12-efd93.firebaseapp.com/">
+        <button className='btn    bg-sky-600 rounded-2xl  '>Live Link</button></a>
+    <a target='_blank' href="https://github.com/rimakhatun3/summer-camp">
+        <button className='btn    bg-orange-600 rounded-2xl  '>Client Link</button></a>
+    <a target='_blank' href="https://github.com/rimakhatun3/samar-camp-server">
+        <button className='btn    bg-rose-500 rounded-2xl  '>Server Link</button></a>
+
+        {/* <button className='btn bg-orange-600 rounded-2xl text-black' onClick={()=>setShowModal(true)}>view details</button> */}
+    </div>
+  </div>
+</div>
+  <div className="card w-full bg-base-100 ">
+  <figure className="px-10 pt-10">
+  <div className='img-container '>
+    <img  src={chefrecipe} alt="" />
+
+  </div>
+    
+  </figure>
+  <div className="card-body items-center text-black text-center">
+  <p className='text-2xl font-bold '>
+       Chef Recipe
+    </p>
+    <h2 className='text-2xl font-bold my-3'>Technologies</h2>
+    <ul className='list-disc grid grid-cols-2 gap-x-16 justify-between gap-x-15  font-semibold'>
+        <li>Reactjs</li>
+        <li>Firebase</li>
+        <li>Mongodb</li>
+        <li>Tailwind</li>
+        <li>Daisy Ui</li>
+    </ul>
+    <div className="card-actions grid grid-cols-3 gap-5">
+    <a target='_blank' href="https://b7a12-efd93.firebaseapp.com/">
+        <button className='btn    bg-sky-600 rounded-2xl  '>Live Link</button></a>
+    <a target='_blank' href="https://b7a12-efd93.firebaseapp.com/">
+        <button className='btn    bg-orange-600 rounded-2xl  '>Client Link</button></a>
+    <a target='_blank' href="https://b7a12-efd93.firebaseapp.com/">
+        <button className='btn    bg-rose-500 rounded-2xl  '>Server Link</button></a>
+
+        {/* <button className='btn bg-orange-600 rounded-2xl text-black' onClick={()=>setShowModal(true)}>view details</button> */}
+    </div>
+  </div>
+</div>
  
   </div>
 
