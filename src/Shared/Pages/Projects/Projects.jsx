@@ -69,7 +69,7 @@ const Projects = () => {
             </div>
         </div>
     <div className='w-full  my-3'>
-    <button className='btn w-11/12 bg-orange-600  rounded-2xl text-black' onClick={()=>setIsOpen(true)}>view details</button>
+    {/* <button className='btn w-11/12 bg-orange-600  rounded-2xl text-black' onClick={()=>setIsOpen(true)}>view details</button> */}
     </div>
         
       </div>
