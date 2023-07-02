@@ -16,23 +16,23 @@ const Contact = () => {
     };
     return (
         <div id="contact">
-            <h1 className='text-3xl font-extrabold text-center mt-14 mb-10 text-orange-500'>--- Contact Me ---</h1>
+            <h1 className='text-3xl font-extrabold text-center mt-14 mb-5 text-orange-500'>--- Contact Me ---</h1>
 
-            <form  ref={form} onSubmit={sendEmail} className='w-full mx-auto space-y-3  bg-orange-400 px-8 py-8' >
-               <div className='w-full lg:w-3/4 mx-auto'>
-                <h1 className='text-lg font-bold mb-2 '>Your Name</h1>
-               <input className='border w-full text-stone-700 px-4 rounded-xl py-2' placeholder='Enter Your Name' type="text"  name="user_name" id="" />
+            <form  ref={form} onSubmit={sendEmail} className='w-full mx-auto space-y-3   px-8 py-8' >
+               <div className='w-full lg:w-2/4 mx-auto'>
+                
+               <input className=' w-full text-stone-700 px-4 border-orange-600  border-4 rounded-xl py-2' placeholder='Enter Your Name' type="text"  name="user_name" id="" />
                </div>
-               <div className='w-full lg:w-3/4 mx-auto'>
-                <h1 className='text-lg font-bold mb-2 '>Your Email</h1>
-               <input className='border w-full px-4 text-stone-700 rounded-xl py-2' placeholder='Enter Your Email' type="text"  name="user_email" id="" />
+               <div className='w-full lg:w-2/4 mx-auto'>
+               
+               <input className='border-orange-600  border-4 w-full px-4 text-stone-700 rounded-xl py-2' placeholder='Enter Your Email' type="text"  name="user_email" id="" />
                </div>
-               <div className='w-full lg:w-3/4 mx-auto'>
-                <h1 className='text-lg font-bold mb-2  '>Your Message</h1>
-               <textarea placeholder='Enter Your ' className='w-full text-stone-700 px-5 py-3 rounded-xl' name="message" id="" cols="25" rows="10"></textarea>
+               <div className='w-full lg:w-2/4 mx-auto'>
+                
+               <textarea placeholder='Enter Your ' className='w-full border-orange-600  border-4 text-stone-700 px-5 py-3 rounded-xl' name="message" id="" cols="15" rows="5"></textarea>
                </div>
-    <div className='w-2/4 mx-auto my-4'>
-    <input className='btn hover:text-black w-full bg-orange-700 text-white' type="submit" value="Send Message" />
+    <div className='lg:w-1/4 w-full mx-auto my-4'>
+    <input className='btn hover:text-black w-full bg-gradient-to-r from-[#f5af19] to-[#f12711] text-white' type="submit" value="Send Message" />
     </div>
             </form>
         </div>

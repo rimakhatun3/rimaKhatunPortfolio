@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaIndent, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaFacebook,  FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white  mt-14">
+    <footer className="bg-gradient-to-r from-[#f5af19] to-[#f12711] w-full   mt-14">
       <div className="container mx-auto py-6 px-12">
         <div className="flex flex-wrap items-center justify-between">
           <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center py-4 bg-gray-900">
+      <p className="text-center py-4 bg-gradient-to-r from-[#f12711] to-[#f5af19]">
         &copy; {new Date().getFullYear()} Rima Khatun Portfolio. All rights reserved.
       </p>
     </footer>

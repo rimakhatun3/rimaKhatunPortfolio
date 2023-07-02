@@ -1,61 +1,117 @@
-import React from 'react';
-import allclass from "../assets/images/allClassespage.png"
-import allInstructor from "../assets/images/allinstructor.png"
-import dashboard from "../assets/images/studentdashboard.png"
-const Modal = ({isVisible,onClose}) => {
-    if(!isVisible){
-        return null
-    }
+import React, { Fragment } from 'react';
+import { Dialog, Transition } from '@headlessui/react'
+import student from "../assets/images/studentdashboard.png"
+import instructor from "../assets/images/allinstructor.png"
+import classes from "../assets/images/allClasses.png"
+const Modal = ({ closeModal, isOpen}) => {
+
     return (
-        <div className='fixed inset-0 mt-40 mb-10  h-[400px]  bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'>
-     
-      {/* if there is a button, it will close the modal */}
-     <div className='w-[800px] mt-20 mb-36  flex flex-col relative '>
-     
+        <div>
+              <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
 
-<div className='bg-white text-black  rounded p-8 my-10'>
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full max-w-screen-xl items-center  justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className=" max-w-screen-md relative transform  rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-bold text-center leading-6 text-gray-900"
+                  >
+                   Sport Camp
+                  </Dialog.Title>
+                  <div className="mt-2">
 
-<div className='grid lg:grid-cols-3 gap-5 mt-5'>
-   <img className='h-[200px]' src={allInstructor} alt="" /> 
-   <img className='h-[200px]' src={allclass} alt="" /> 
-   <img className='h-[200px]' src={dashboard} alt="" /> 
-</div>
-
-<div>
-    <p className='text-2xl font-bold my-3 '>
-        Sport Camp
-    </p>
-    
-    <p>
-        This Is a student sport Educational website.This website is a mobile-responsive platform with dark-light theme mode, role management, authentication and authorization using Firebase and JWT payment system by using stripe method, Student can easily login this site.Student can select their class and enroll by payment successfull .
-    </p>
-    <h2 className='text-2xl font-bold my-3'>Technologies</h2>
-    <ul className='list-disc grid grid-cols-3 justify-between  font-semibold'>
-        <li>Reactjs</li>
-        <li>Firebase</li>
-        <li>Mongodb</li>
-        <li>Tailwind</li>
-        <li>Daisy Ui</li>
+                  <div className="card w-full  ">
+  <div className='grid lg:grid-cols-3 '>
+  <figure>
+   
+    <img className=' w-full rounded-3xl ' src={classes} alt="Shoes" />
+    </figure>
+  <figure><img className='w-9/12 rounded-3xl ' src={instructor} alt="Shoes" /></figure>
+  <figure><img className='w-9/12 rounded-3xl ' src={student} alt="Shoes" /></figure>
+  </div>
+  <div className="card-body text-black">
+  <p className='text-2xl underline font-bold text-center my-3'>Projects Details</p>
+    <ul className='list-decimal'>
+        <li>Login and Register Functionality.</li>
+        <li>Admin, Student, Instructor dashboard admin can make instructor and instructor can add a class.</li>
+        <li>Payment functionality, student can enroll classes by successfully payment.</li>
     </ul>
-   <div className='my-4 flex gap-5'>
-    <a target='_blank' href="https://b7a12-efd93.firebaseapp.com/">
-        <button className='btn  hover:bg-orange-400 btn-sm px-2 bg-orange-600 rounded-3xl  '>Live Link</button>
-    </a>
-    <a target='_blank' href="https://github.com/rimakhatun3/summer-camp">
-        <button className='btn  hover:bg-sky-400 btn-sm px-2 bg-sky-600 rounded-3xl  '>Client Link</button>
-    </a>
-    <a target='_blank' href="https://github.com/rimakhatun3/samar-camp-server">
-        <button className='btn  hover:bg-green-400 btn-sm px-2 bg-green-600 rounded-3xl  '>Server Link</button>
-    </a>
 
-   </div>
-   <button  onClick={()=>onClose()} className="place-self-end border rounded-full px-3  bg-rose-600 absolute bottom-16 right-3 text-black">Close</button>
-</div>
-</div>
-     </div>
+    {/* <p className='text-2xl font-bold '>Technologies</p>
+    <div className='grid grid-cols-3 gap-4'>
+        <p className='border text-center  rounded-2xl text-cen py-2 bg-slate-300'  >
+        Reactjs
+        </p>
+        <p className='border text-center  rounded-2xl text-cen py-2 bg-slate-300'>
+        Firebase
+        </p>
+        <p className='border text-center  rounded-2xl text-cen py-2 bg-slate-300'>
+        Mongodb
+        </p>
+
+    </div> */}
+    {/* <div className='grid grid-cols-3 gap-4'>
+        <p className='border text-center   rounded-2xl text-cen py-2 bg-slate-300'  >
+       Tailwind
+        </p>
+        <p className='border text-center  rounded-2xl text-cen py-2 bg-slate-300'>
+        DaisyUi
+        </p>
+        <p className='border text-center  rounded-2xl text-cen py-2 bg-slate-300'>
+       ExpressJs
+        </p>
+
+    </div> */}
+   
+    <div className="card-actions justify-evenly my-3 ">
+         <a target='_blank' href="https://b7a12-efd93.firebaseapp.com/">
+        <button className='btn    bg-gradient-to-r from-[#f5af19] to-[#f12711] rounded-2xl  '>Live Link</button></a>
+    <a target='_blank' href="https://github.com/rimakhatun3/summer-camp">
+        <button className='btn    bg-gradient-to-r from-[#f5af19] to-[#f12711] rounded-2xl  '>Client Link</button></a>
+    <a target='_blank' href="https://github.com/rimakhatun3/samar-camp-server">
+        <button className='btn    bg-gradient-to-r from-[#f5af19] to-[#f12711] rounded-2xl  '>Server Link</button></a>
     </div>
-  
-       
+  </div>
+</div>
+                  </div>
+
+                  <div className="mt-4">
+                    <button
+                      type="button"
+                      className="btn btn-sm btn-circle   btn-error  font-medium absolute top-0 right-0"
+                      onClick={closeModal}
+                    >
+                      X
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
+        </div>
     );
 };
 

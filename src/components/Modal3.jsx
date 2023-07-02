@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react'
-import toybanner from "../assets/images/toybanner.png"
-import toycategory from "../assets/images/toycategory.png"
-import alltoy from "../assets/images/alltoy.png"
-const Modal2 = ({ closeModal, isOpen}) => {
+import chefbanner from "../assets/images/chefbanner.png"
+import chefinfo from "../assets/images/chefinfo.png"
+import chefrecipe from "../assets/images/chefrecipe2.png"
+const Modal3 = ({ closeModal, isOpen}) => {
     
     return (
         <div>
@@ -35,9 +35,9 @@ const Modal2 = ({ closeModal, isOpen}) => {
                 <Dialog.Panel className="w-full max-w-screen-md relative transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-bold text-center leading-6 text-gray-900"
+                    className="text-lg font-medium leading-6 text-gray-900"
                   >
-                 Toy Markrt Place
+                  Chef Recipe
                   </Dialog.Title>
                   <div className="mt-2">
 
@@ -45,28 +45,27 @@ const Modal2 = ({ closeModal, isOpen}) => {
   <div className='grid lg:grid-cols-3 '>
   <figure>
    
-    <img className=' w-full rounded-3xl ' src={toybanner} alt="Shoes" />
+    <img className=' w-full rounded-3xl ' src={chefbanner}  alt="Shoes" />
     </figure>
-  <figure><img className='w-9/12 rounded-3xl ' src={toycategory} alt="Shoes" /></figure>
-  <figure><img className='w-9/12 rounded-3xl ' src={alltoy} alt="Shoes" /></figure>
+  <figure><img className='w-9/12 rounded-3xl ' src={chefinfo} alt="Shoes" /></figure>
+  <figure><img className='w-9/12 rounded-3xl ' src={chefrecipe} alt="Shoes" /></figure>
   </div>
   <div className="card-body text-black">
-    <p className='text-2xl underline font-bold text-center my-3'>Projects Details</p>
-
+  <p className='text-2xl underline font-bold text-center my-3'>Projects Details</p>
     <ul className='list-decimal'>
-        <li>This website for a Toy Management..</li>
-        <li>Users need to login before getting add toy, quantity, add or delete.</li>
-        <li>Client can update quantity (deliver or restock).</li>
+        <li>This website for information and chef food recipe and food item.</li>
+        <li>User need to login before getting add a food or like..</li>
+        <li>A user can place an order, and the user has a dashboard Where he can cancel the order.</li>
     </ul>
 
    
    
-    <div className="card-actions justify-evenly my-3">
-    <a target='_blank' href="https://toy-marketplace-6e61f.firebaseapp.com/">
-        <button className='btn    bg-gradient-to-r from-[#f5af19] to-[#f12711] rounded-2xl  '>Live Link</button></a>
-        <a target='_blank' href="https://github.com/rimakhatun3/toy-market-place">
-        <button className='btn    bg-gradient-to-r from-[#f5af19] to-[#f12711] rounded-2xl  '>Client Link</button></a>
-    <a target='_blank' href="https://github.com/rimakhatun3/toy-market-place-server">
+    <div className="card-actions justify-evenly my-3 ">
+    <a target='_blank' href="https://chef-recipe-hunter-clien-d4424.firebaseapp.com/">
+        <button className='btn    bg-gradient-to-r from-[#f12711] to-[#f5af19] rounded-2xl  '>Live Link</button></a>
+    <a target='_blank' href="https://github.com/rimakhatun3/chef-recipe-ass">
+        <button className='btn    bg-gradient-to-r from-[#f12711] to-[#f5af19] rounded-2xl  '>Client Link</button></a>
+    <a target='_blank' href="https://github.com/rimakhatun3/chef-recipe-server">
         <button className='btn    bg-gradient-to-r from-[#f5af19] to-[#f12711] rounded-2xl  '>Server Link</button></a>
     </div>
   </div>
@@ -92,4 +91,4 @@ const Modal2 = ({ closeModal, isOpen}) => {
     );
 };
 
-export default Modal2;
+export default Modal3;
