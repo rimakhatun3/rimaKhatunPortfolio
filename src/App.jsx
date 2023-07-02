@@ -91,9 +91,9 @@ useEffect(()=>{
   </div>
 
 </div>
-<div id="#"  className=' mb-16 mt-36 sm:px-5  w-full lg:flex lg:gap-5 '>
+<div id="#"  className=' mb-16 mt-36 sm:px-5  w-full lg:flex lg:gap-16 '>
 
-<div className='lg:w-1/2 w-full'>
+<div className='lg:w-1/2 w-full items-center justify-center'>
 <h1 className='text-2xl font-bold my-2 '>Hi! I'm ,</h1>
 <h2 className='font-serif text-xl font-semibold'>Rima Khatun</h2>
 <TypeAnimation className='text-orange-500'
@@ -120,7 +120,7 @@ I intend to make functional websites with adequate UI/UX.</p>
 </div>
 
 <div className='lg:w-1/2 w-full'>
-<img className='rounded-2xl' src={laptop} alt="" />
+<img className='rounded-2xl lg:w-10/12' src={laptop} alt="" />
 </div>
   </div>
 
