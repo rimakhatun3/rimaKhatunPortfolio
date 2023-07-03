@@ -22,6 +22,8 @@ import Projects from './Shared/Pages/Projects/Projects';
 import Contact from './Shared/Pages/Contact';
 import Footer from './Shared/Pages/Footer';
 import laptop from "../src/assets/images/laptop.avif"
+import resume from "../src/assets/Resume_of_Rima.pdf"
+
 
 function App() {
 
@@ -114,7 +116,7 @@ useEffect(()=>{
 <p className='my-4  '>Welcome to my portfolio! I'm a passionate MERN stack web developer .My motive is to acquire insight and knowledge into this spectrum.
 I intend to make functional websites with adequate UI/UX.</p>
  
- <a target='_blank' href='https://drive.google.com/file/d/18pcIAjjCuRrV2-2tArdLHd0OX-LgAInm/view?usp=sharing' download>
+ <a target='_blank' download href={resume} >
   <button className='btn rounded-3xl text-white  bg-gradient-to-r from-[#f5af19] to-[#f12711] ms-2 '>Download Resume <FaDownload></FaDownload></button>
  </a>
 </div>
