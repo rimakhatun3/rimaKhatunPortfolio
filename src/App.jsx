@@ -119,7 +119,7 @@ I intend to make functional websites with adequate UI/UX.</p>
  </a>
 </div>
 
-<div data-aos="fade-up" className='lg:w-1/2 w-full'>
+<div data-aos="fade-down" className='lg:w-1/2 w-full'>
 <img className='rounded-2xl lg:w-10/12' src={laptop} alt="" />
 </div>
   </div>
