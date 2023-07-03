@@ -93,7 +93,7 @@ useEffect(()=>{
 </div>
 <div id="#"  className=' mb-16 mt-36 px-6  lg:px-14 w-full lg:flex lg:gap-16 '>
 
-<div data-aos="fade-slide" className='lg:w-1/2 w-full  items-center justify-center'>
+<div data-aos="fade-up" className='lg:w-1/2 w-full  items-center justify-center'>
 <h1 className='text-2xl font-bold my-2 '>Hi! I'm ,</h1>
 <h2 className='font-serif text-xl font-semibold'>Rima Khatun</h2>
 <TypeAnimation className='text-orange-500'
@@ -114,7 +114,7 @@ useEffect(()=>{
 <p className='my-4  '>Welcome to my portfolio! I'm a passionate MERN stack web developer .My motive is to acquire insight and knowledge into this spectrum.
 I intend to make functional websites with adequate UI/UX.</p>
  
- <a target='_blank' href='https://drive.google.com/file/d/1eyYX2rJWfUcUJuPEJ0bmDWBEvDP1U5AT/view?usp=drive_link' download>
+ <a target='_blank' href='https://drive.google.com/file/d/18pcIAjjCuRrV2-2tArdLHd0OX-LgAInm/view?usp=sharing' download>
   <button className='btn rounded-3xl text-white  bg-gradient-to-r from-[#f5af19] to-[#f12711] ms-2 '>Download Resume <FaDownload></FaDownload></button>
  </a>
 </div>
