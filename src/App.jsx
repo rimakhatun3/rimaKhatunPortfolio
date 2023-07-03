@@ -49,7 +49,7 @@ useEffect(()=>{
   return (
     <div >
     
-    <div className="navbar bg-slate-300 border-b-2 border-orange-600   fixed   top-0 z-50   w-full   ">
+    <div className="navbar px-14 bg-slate-300 border-b-2 border-orange-600   fixed   top-0 z-50   w-full   ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -67,7 +67,7 @@ useEffect(()=>{
     <a  className='font-custom font-bold text-2xl'>Rima <span className='text-[#f5af19]' >Kha</span><span className='text-[#f12711]'>tun</span> </a>
     
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center hidden lg:flex ">
     <ul className="menu menu-horizontal border rounded-2xl px-4  ">
     <li className='me-2 bg-gradient-to-r from-[#f5af19] to-[#f12711] rounded-xl' ><a className='border-2 border-orange-500 cursor-pointer ' href="#">Home</a></li>
     <li className='me-2 bg-gradient-to-r from-[#f5af19] to-[#f12711] rounded-xl'><a className='navlink' href="#about">About</a></li>
@@ -91,9 +91,9 @@ useEffect(()=>{
   </div>
 
 </div>
-<div id="#"  className=' mb-16 mt-36 sm:px-5  w-full lg:flex lg:gap-16 '>
+<div id="#"  className=' mb-16 mt-36 px-6  lg:px-14 w-full lg:flex lg:gap-16 '>
 
-<div className='lg:w-1/2 w-full items-center justify-center'>
+<div data-aos="fade-slide" className='lg:w-1/2 w-full  items-center justify-center'>
 <h1 className='text-2xl font-bold my-2 '>Hi! I'm ,</h1>
 <h2 className='font-serif text-xl font-semibold'>Rima Khatun</h2>
 <TypeAnimation className='text-orange-500'
@@ -119,7 +119,7 @@ I intend to make functional websites with adequate UI/UX.</p>
  </a>
 </div>
 
-<div className='lg:w-1/2 w-full'>
+<div data-aos="fade-up" className='lg:w-1/2 w-full'>
 <img className='rounded-2xl lg:w-10/12' src={laptop} alt="" />
 </div>
   </div>
